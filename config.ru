@@ -1,6 +1,3 @@
-require 'rubygems'
-require './betabot'
-
 # create symlink to application folder:
 # ---------------------------------------------------------------
 # ~/.pow % ln -s /path/to/betabot-lucy     (use absolute path)
@@ -10,5 +7,12 @@ require './betabot'
 # ---------------------------------------------------------------
 # touch tmp/restart.txt
 # cat ~/Library/Logs/Pow/apps/betabot-lucy.log
+
+require 'rubygems'
+require 'bundler'
+
+Bundler.require
+require 'sinatra'
+require './betabot'
 
 run Sinatra::Application

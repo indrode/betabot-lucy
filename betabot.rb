@@ -4,9 +4,6 @@
 # |___|___|\__\__,_|_.__|___/\__| |____|\_,_\__|\_, | 
 #                                               |__/  
 
-require 'sinatra'
-require 'haml'
-
 get '/' do
   @message = "This is betabot-lucy!"
   haml :index
