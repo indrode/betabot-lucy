@@ -1,7 +1,7 @@
-require File.dirname(__FILE__) + '/../betabot.rb'
+require File.dirname(__FILE__) + '/acceptance_helper'
 
 describe "Betabot" do
   it "should display the homepage" do
-    true
+    visit '/'
   end
 end
